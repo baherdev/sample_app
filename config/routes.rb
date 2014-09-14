@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
   get 'users/new'
 
-  #get 'pages/home'
-
-  #get 'pages/contact'
-
-  #get "pages/about"
+  get  'pages/signup',  :to => 'users#new', as: 'new'
  
   get 'pages/contact', :to => 'pages#contact', as: 'contact'
   get 'pages/about',   :to => 'pages#about', as: 'about'
